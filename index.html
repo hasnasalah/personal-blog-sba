@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <script defer src="./script.js"></script>
+     <title>Personal Blog</title>
+</head>
+<body>
+    <h1>My Blog</h1>
+
+    <main>
+        <section id="container1">
+            <h2>Create New Post</h2>
+           <form id="postForm">
+            <label>Title</label>
+            <input id="titleInput" type="text" required/>
+            <span id="titleError"></span>
+            <label>Content</label>
+            <textarea type="text" id="content" required></textarea>
+              <span id="contentError"></span>
+            <button id="submit" >Submit</button>
+           </form>
+        </section>
+        <section id="ul">
+          <h2>Recent Posts</h2>
+            <ul id="postList"></ul>
+        </section>
+    </main>
+    
+</body>
+</html>
