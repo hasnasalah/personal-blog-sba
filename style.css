@@ -66,7 +66,7 @@ textarea:focus {
 button {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #0077cc;
+  background-color: green;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -103,7 +103,40 @@ button:hover {
   background: #e9f3ff;
   transform: translateY(-3px);
 }
-
+.delete, #cancelEdit{
+    margin:10px;
+ background-color:red;
+}
+.edit, #editSubmit{
+    margin:10px;
+    background-color: blue;
+}
+.div, #editBtnContainer{
+display: flex;
+justify-content: end;
+gap:10px;
+}
+#modal{
+      display: none;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  gap: 30px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+#modal h2 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.3rem;
+}
+#modal label {
+  display: block;
+  font-weight: 600;
+  margin: 12px 0 6px;
+}
 
 @media (max-width: 500px) {
   main {

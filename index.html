@@ -10,7 +10,7 @@
 <body>
     <h1>My Blog</h1>
 
-    <main>
+    <main id="main">
         <section id="container1">
             <h2>Create New Post</h2>
            <form id="postForm">
@@ -28,6 +28,25 @@
             <ul id="postList"></ul>
         </section>
     </main>
+    <section id="modal" style="display:none;">
+        <h2>Edit Post</h2>
+           <form id="postEditForm">
+            <label>Title</label>
+            <input id="editTitleInput" type="text" required/>
+            <span id="editTitleError"></span>
+            <label>Content</label>
+            <textarea type="text" id="Editcontent" required></textarea>
+              <span id="editContentError"></span>
+              <div id="editBtnContainer">
+            <button id="editSubmit" >Submit</button>
+            <button id="cancelEdit" >Cancel</button>
+            </div>
+           </form>
+
+
+
+
+    </section>
     
 </body>
 </html>
